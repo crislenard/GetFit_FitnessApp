@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2929"
+    tools:context="edu.jru.deleon.deleonfitnessapp.Pedometer">
+
+
+    <Button
+        android:id="@+id/toggle"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:onClick="togglePedometer"
+        android:text="START"
+        android:layout_alignParentBottom="true"
+        android:background="#f8f201"
+        />
+
+    <TextView
+        android:id="@+id/caloriesValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/calories"
+        android:layout_alignParentEnd="true"
+        android:text="0.0 cals"
+        android:textColor="#f8f201"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/distanceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0 km"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/distance"
+        android:layout_alignBottom="@+id/distance"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#f8f201"/>
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average Speed"
+        android:textSize="24sp"
+        android:textColor="#f8f201"
+        android:layout_marginTop="33dp"
+
+        android:layout_below="@+id/distance"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Calories"
+        android:textSize="24sp"
+        android:layout_below="@+id/speed"
+        android:layout_alignParentStart="true"
+        android:textColor="#f8f201"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#f8f201"
+        />
+
+    <TextView
+        android:id="@+id/speedValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0 m/s"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/speed"
+        android:layout_alignBottom="@+id/speed"
+        android:layout_alignStart="@+id/caloriesValue"
+        android:textColor="#f8f201"/>
+
+    <Button
+        android:id="@+id/reset"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:onClick="resetPedometer"
+        android:text="RESET"
+        tools:layout_editor_absoluteY="3dp"
+        android:background="#f8f201"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+
+        android:layout_width="416dp"
+        android:layout_height="111dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="100dp"
+        android:textColor="#f8f201"
+        android:id="@+id/txtStep"
+        android:background="#40ffffff"
+        android:layout_above="@+id/distance"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/shoe2"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WORKOUT PEDOMETER"
+        android:textSize="30sp"
+        android:textColor="#f8f201"
+     style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/home"
+        android:id="@+id/btnHomePedo"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/textView"
+        />
+
+
+</RelativeLayout>
+

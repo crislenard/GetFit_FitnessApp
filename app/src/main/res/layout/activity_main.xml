@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2929"
+    tools:context="edu.jru.deleon.deleonfitnessapp.MainActivity">
+
+  <android.support.v4.view.ViewPager
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentStart="true"
+      android:id="@+id/viewPager">
+
+  </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_below="@id/viewPager"
+        android:id="@+id/SliderDots">
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/btnPedometer"
+        android:src="@drawable/shoe"
+        android:background="#f8f201"
+        android:scaleType="centerInside"
+        android:padding="15dp"
+        android:layout_alignTop="@+id/btnPlan"
+        android:layout_alignStart="@+id/btnWorkout" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/btnWorkout"
+        android:src="@drawable/weightlifter"
+        android:background="#f8f201"
+        android:scaleType="centerInside"
+        android:padding="15dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/SliderDots"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/btnWarmUp"
+        android:src="@drawable/fitness"
+        android:background="#f8f201"
+        android:scaleType="centerInside"
+        android:padding="15dp"
+
+        android:layout_alignTop="@+id/btnWorkout"
+        android:layout_toEndOf="@+id/btnWorkout"
+        android:layout_marginStart="38dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/btnPlan"
+        android:src="@drawable/man"
+        android:background="#f8f201"
+        android:scaleType="centerInside"
+        android:padding="15dp"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/btnWarmUp"
+        android:layout_alignStart="@+id/btnWarmUp" />
+
+
+</RelativeLayout>

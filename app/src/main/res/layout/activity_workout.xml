@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_workout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#2b2929"
+    tools:context="edu.jru.deleon.deleonfitnessapp.Workout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="PUSH UPS"
+        android:textStyle="bold"
+        android:textColor="#f8f201"
+        android:id="@+id/txtexer"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Repeat repetition as many as you can"
+        android:textStyle="italic"
+        android:textColor="#f8f201"
+        android:id="@+id/txtGuide"
+        android:layout_below="@+id/txtexer"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/txtGuide"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/workout1"
+        android:id="@+id/imgWorkout" />
+
+    <Button
+        android:id="@+id/btnstart"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:layout_alignParentBottom="true"
+        android:background="#f8f201"
+        />
+
+    <Button
+        android:id="@+id/btnreset"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:onClick="togglePedometer"
+        android:text="RESET"
+        android:background="#f8f201"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="#f8f201"
+        android:id="@+id/txttime"
+        android:background="#40ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imgWorkout"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="WORKOUT EXERCISE"
+        style="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textColor="#f8f201"
+        android:id="@+id/textView3"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <ToggleButton
+        android:id="@+id/btnpause"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Pause"
+        android:textOn="Resume"
+        android:background="#f8f201"
+        android:layout_marginBottom="10dp"
+
+        android:layout_above="@+id/btnstart"
+        android:layout_centerHorizontal="true" />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/weightlifter2"
+        android:rotation="45"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/stopwatch1"
+        android:id="@+id/imageView3"
+        android:layout_alignTop="@+id/txttime"
+        android:layout_alignStart="@+id/txtGuide" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/stopwatch1"
+        android:id="@+id/imageView4"
+        android:layout_alignTop="@+id/txttime"
+        android:layout_alignEnd="@+id/txtGuide" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/home"
+        android:id="@+id/btnHomeWork"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</RelativeLayout>

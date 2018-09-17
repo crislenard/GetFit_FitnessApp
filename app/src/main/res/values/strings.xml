@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DeLeonFitnessApp</string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="title_slide1">In-app Routine Exercises</string>
+    <string name="desc_slide1">Provides exercises that is useful even for starters.</string>
+    <string name="title_slide2">In-app Pedometer</string>
+    <string name="desc_slide2">Uses sensors in order to track your steps.Also shows actual calories burned.</string>
+    <string name="title_slide3">Easy to use</string>
+    <string name="desc_slide3">Provides a user-friendly interface for users.</string>
+
+</resources>
